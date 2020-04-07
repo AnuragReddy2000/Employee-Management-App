@@ -96,4 +96,4 @@ function parseEdit(X){
     return "UPDATE Company.AdditionalDetails SET Teams = '"+entries.teams+"',Domain = '"+entries.domain+"' WHERE Id = '"+entries.id+"'";
 }
 
-app.listen(3000);
+app.listen(3000, '192.168.43.132' || '127.0.0.1');

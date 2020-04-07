@@ -74,15 +74,16 @@ class HomePageState extends State<HomePage> {
             ),
           ),
           Column(
-            mainAxisAlignment: MainAxisAlignment.end,
+            mainAxisAlignment: MainAxisAlignment.start,
             children: <Widget>[
-              Expanded(
-                child: Container(
+               Container(
                   width: MediaQuery.of(context).size.width,
                   color: Color.fromARGB(20, 255, 255, 255),
                   padding: EdgeInsets.all(5),
+                  alignment: Alignment.topCenter,
                   margin: EdgeInsets.only(left: 10, right: 10, bottom: 5, top: kToolbarHeight + 10),
                   child: Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
                     children: <Widget>[
                       Text('Employee Demographics:',
                         textAlign: TextAlign.center,
@@ -92,12 +93,11 @@ class HomePageState extends State<HomePage> {
                         padding: EdgeInsets.only(top: 40,),
                         alignment: Alignment.center,
                         child: CircularProgressIndicator(backgroundColor: Colors.transparent,valueColor: AlwaysStoppedAnimation<Color>(Colors.black45),),
-                        ) : Expanded(child: Demographics(data: data,),),
+                        ) : Demographics(data: data,)
                     ],
                   )
-                )
-              ),
-              StartPageButtons(create: create,edit: edit,delete: delete,search: search,),
+                ),
+                Expanded(child: StartPageButtons(create: create,edit: edit,delete: delete,search: search,),)
             ],
           ),
         ],

@@ -4,7 +4,7 @@ import 'package:http/http.dart' as http;
 
 class ServerUtil {
   static const TIMEOUT = 5;
-  static String ip = '193.168.43.132';
+  static String ip = '192.168.43.132';
 
   static Map<String, String> makeFile(List<String> input){
     Map<String, String> result = 

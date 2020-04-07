@@ -10,8 +10,8 @@ class StartPageButton extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     return Container(
-        height: (MediaQuery.of(context).size.width)/2,
         margin: EdgeInsets.all(5),
+        padding: EdgeInsets.all(5),
         decoration: BoxDecoration(color: Color.fromARGB(20, 255, 255, 255)),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

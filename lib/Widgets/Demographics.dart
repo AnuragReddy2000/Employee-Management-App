@@ -17,34 +17,33 @@ class Demographics extends StatelessWidget{
       )
     )
     : Container(
-      alignment: Alignment.centerLeft,
-      margin: EdgeInsets.only(top: 10,left:15,right: 10),
+      alignment: Alignment.center,
+      margin: EdgeInsets.only(top: 10,left:15,right: 10,bottom: 10),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: <Widget>[
           Container(
             alignment: Alignment.centerLeft,
-            child: Text('Vice Presidents:  '+data[0].toString() ,textAlign: TextAlign.left,style: GoogleFonts.josefinSans(textStyle: TextStyle(fontSize: 17, color: Colors.white, decorationThickness: 10))),
+            child: Text('Vice Presidents:  '+data[0].toString() ,textAlign: TextAlign.left,style: GoogleFonts.josefinSans(textStyle: TextStyle(fontSize: 17*(MediaQuery.of(context).size.height /640), color: Colors.white, decorationThickness: 10))),
           ),
           Container(
             alignment: Alignment.centerLeft,
-            child: Text('Product Directors:  '+data[1].toString(),textAlign: TextAlign.left,style: GoogleFonts.josefinSans(textStyle: TextStyle(fontSize: 17, color: Colors.white, decorationThickness: 5))),
+            child: Text('Product Directors:  '+data[1].toString(),textAlign: TextAlign.left,style: GoogleFonts.josefinSans(textStyle: TextStyle(fontSize: 17*(MediaQuery.of(context).size.height /640), color: Colors.white, decorationThickness: 5))),
           ),
           Container(
             alignment: Alignment.centerLeft,
-            child: Text('Engineering Directors:  '+data[2].toString(),textAlign: TextAlign.left,style: GoogleFonts.josefinSans(textStyle: TextStyle(fontSize: 17, color: Colors.white, decorationThickness: 5))),
+            child: Text('Engineering Directors:  '+data[2].toString(),textAlign: TextAlign.left,style: GoogleFonts.josefinSans(textStyle: TextStyle(fontSize: 17*(MediaQuery.of(context).size.height /640), color: Colors.white, decorationThickness: 5))),
           ),
           Container(
             alignment: Alignment.centerLeft,
-            child: Text('Product Managers:  '+data[3].toString(),textAlign: TextAlign.left,style: GoogleFonts.josefinSans(textStyle: TextStyle(fontSize: 17, color: Colors.white, decorationThickness: 5))),
+            child: Text('Product Managers:  '+data[3].toString(),textAlign: TextAlign.left,style: GoogleFonts.josefinSans(textStyle: TextStyle(fontSize: 17*(MediaQuery.of(context).size.height /640), color: Colors.white, decorationThickness: 5))),
           ),
           Container(
             alignment: Alignment.centerLeft,
-            child: Text('Engineering Managers:  '+data[4].toString(),textAlign: TextAlign.left,style: GoogleFonts.josefinSans(textStyle: TextStyle(fontSize: 17, color: Colors.white, decorationThickness: 5))),
+            child: Text('Engineering Managers:  '+data[4].toString(),textAlign: TextAlign.left,style: GoogleFonts.josefinSans(textStyle: TextStyle(fontSize: 17*(MediaQuery.of(context).size.height /640), color: Colors.white, decorationThickness: 5))),
           ),
           Container(
             alignment: Alignment.centerLeft,
-            child: Text('Developers:  '+data[5].toString(),textAlign: TextAlign.left,style: GoogleFonts.josefinSans(textStyle: TextStyle(fontSize: 17, color: Colors.white, decorationThickness: 5))),
+            child: Text('Developers:  '+data[5].toString(),textAlign: TextAlign.left,style: GoogleFonts.josefinSans(textStyle: TextStyle(fontSize: 17*(MediaQuery.of(context).size.height /640), color: Colors.white, decorationThickness: 5))),
           ),
         ],
       ),
